@@ -6,6 +6,7 @@ import TodoList from "./todo";
 function Parent() {
   const [currentPage, setCurrentPage] = useState("menu"); // 현재 페이지 상태
 
+  //페이지 구분용
   return (
     <>
       {currentPage === "menu" && <Menu onNavigate={setCurrentPage} />}
