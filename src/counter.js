@@ -1,7 +1,6 @@
-import "./App.css";
 import React, { useState } from "react";
 
-function App() {
+function Counter({ onBack }) {
   const [number, setNumber] = useState(0);
 
   return (
@@ -16,8 +15,14 @@ function App() {
       >
         증가
       </button>
+      <button
+        className="mt-4 px-6 py-2 bg-red-500 text-white rounded hover:bg-red-700 transition-colors"
+        onClick={onBack} // Menu로 돌아가기
+      >
+        메뉴로 돌아가기
+      </button>
     </div>
   );
 }
 
-export default App;
+export default Counter;
