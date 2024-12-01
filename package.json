@@ -2,6 +2,7 @@
   "name": "react-practice",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://KangBaekGwa.github.io/react-js-study",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
