@@ -33,6 +33,16 @@ function Menu({ onNavigate }) {
               </button>
             </div>
           </li>
+          <li>
+            <div className="flex items-center gap-x-6">
+              <button
+                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors"
+                onClick={() => onNavigate("menuList")}
+              >
+                메뉴 상단 바 만들어보기
+              </button>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
