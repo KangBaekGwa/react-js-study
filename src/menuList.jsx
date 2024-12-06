@@ -16,13 +16,41 @@ function MenuList({ onBack }) {
             메뉴아이템1
           </button>
           <ul className="absolute w-full hidden group-hover:block z-10">
-            <li>
+            <li className="relactive group/p2">
               <button
                 onClick={handleClick}
                 className="w-full bg-blue-500 text-white hover:bg-blue-700 transition-colors hover:underline"
               >
                 서브1-1
               </button>
+              <ul className="absolute w-full left-full top-0 hidden group-hover/p2:block">
+                <li>
+                  <button
+                    onClick={handleClick}
+                    className="w-full bg-blue-500 text-white hover:bg-blue-700 transition-colors hover:underline"
+                  >
+                    서브1-1-A
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={handleClick}
+                    className="w-full bg-blue-500 text-white hover:bg-blue-700 transition-colors hover:underline"
+                  >
+                    서브1-1-B
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={handleClick}
+                    className="w-full bg-blue-500 text-white hover:bg-blue-700 transition-colors hover:underline"
+                  >
+                    서브1-1-C
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li>
               <button
                 onClick={handleClick}
                 className="w-full bg-blue-500 text-white hover:bg-blue-700 transition-colors hover:underline"
